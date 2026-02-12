@@ -121,7 +121,7 @@ const MiniCart = ({ showCart, setShowCart, setLoading }: MiniCartProps) => {
                     </Link>
                     <div style={{ fontSize: "13px", color: "#555", display: "flex", gap: "6px" }}>
                       <span>{item.orderQuantity} ×</span>
-                      <span>{item.discountedRetailPrice} TK</span>
+                      <span>${item.discountedRetailPrice} </span>
                     </div>
                   </div>
 
@@ -158,7 +158,7 @@ const MiniCart = ({ showCart, setShowCart, setLoading }: MiniCartProps) => {
                 }}
               >
                 <span>Subtotal:</span>
-                <span>{total} TK</span>
+                <span>${total} </span>
               </div>
               <div style={{ display: "flex", gap: "10px", flexDirection: "column" }}>
                 <Link
