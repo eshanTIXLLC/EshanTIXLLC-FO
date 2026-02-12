@@ -77,8 +77,8 @@ const ProductDetailsUpper = ({
 - Variant/Size: ${variant}
 - Quantity: ${orderQuantity}
 - Price per unit: $ ${price ?? 0}
-- Total Price: $ ${(price ?? 0) * orderQuantity} 
-- Delivery Charge: Dhaka 80 TK, Outside Dhaka 120 TK`;
+- Total Price: $ ${(price ?? 0) * orderQuantity}` 
+;
 
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
