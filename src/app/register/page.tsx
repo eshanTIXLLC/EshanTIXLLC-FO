@@ -8,8 +8,8 @@ import Loading from "../loading";
 import AnnouncementBar from "@/utils/AnnouncementBar";
 
 export const metadata: Metadata = {
-  title: "Create an Account - Urban Attire",
-  description: "Join Urban Attire and start your shopping journey today",
+  title: "Create an Account - ESHAN TIX LLC",
+  description: "Join ESHAN TIX LLC and start your shopping journey today",
 };
 
 export default function RegisterPage() {

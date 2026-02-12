@@ -91,7 +91,7 @@ export default function GadgetProductCard({ product, setLoading }: any) {
 
         <button className="quick-view-btn">
           <Eye size={18} />
-          <span>Quick View</span>
+          <span>View Product</span>
         </button>
       </div>
 

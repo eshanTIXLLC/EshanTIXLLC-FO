@@ -62,7 +62,7 @@ const CheckoutOrders = ({
 
           <div className="product-right">
             <span className="price">
-              {(item.discountedRetailPrice * item.orderQuantity).toFixed(2)} TK
+              ${(item.discountedRetailPrice * item.orderQuantity).toFixed(2)} 
             </span>
 
             <button
@@ -78,20 +78,20 @@ const CheckoutOrders = ({
       <div className="summary-box">
         <div className="row">
           <span>Delivery</span>
-          <span>{deliveryFee.toFixed(2)} TK</span>
+          <span>${deliveryFee.toFixed(2)} </span>
         </div>
 
         {couponDiscount > 0 && (
           <div className="row discount">
             <span>Coupon Discount</span>
-            <span>- {couponDiscount.toFixed(2)} TK</span>
+            <span>- ${couponDiscount.toFixed(2)} </span>
           </div>
         )}
 
         <div className="row total">
           <span>Total</span>
           <span>
-            {(total + deliveryFee - couponDiscount).toFixed(2)} TK
+            ${(total + deliveryFee - couponDiscount).toFixed(2)}
           </span>
         </div>
       </div>
@@ -108,9 +108,10 @@ const CheckoutOrders = ({
             checked={paymentMethod === "Cash on Delivery"}
             onChange={(e) => setPaymentMethod?.(e.target.value)}
           />
-          Cash on Delivery (Default)
+          Cash on Delivery 
+          
         </label>
-
+{/* 
         <label className="radio-item">
           <input
             type="radio"
@@ -120,7 +121,7 @@ const CheckoutOrders = ({
             onChange={(e) => setPaymentMethod?.(e.target.value)}
           />
           Online Payment
-        </label>
+        </label> */}
       </div>
 
       {/* PAY BUTTON

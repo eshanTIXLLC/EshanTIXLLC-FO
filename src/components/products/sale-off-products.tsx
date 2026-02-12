@@ -49,10 +49,12 @@ const SaleOffProducts = ({
           <div className="row">
 <div className="col-12 text-center mb-50">
   <h2 className="animated-title">
-    Trendy Picks of the Week
+    Top Picks for You
+
   </h2>
   <p className="animated-subtitle">
-    Explore our handpicked collection – style, comfort, and the best deals in one place.
+From everyday essentials to special finds — explore products we think you’ll love.
+
   </p>
 </div>
 

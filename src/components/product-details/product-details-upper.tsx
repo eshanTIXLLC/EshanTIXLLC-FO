@@ -94,9 +94,8 @@ const ProductDetailsUpper = ({
 - Product: ${product.name}
 - Variant/Size: ${variant}
 - Quantity: ${orderQuantity}
-- Price per unit: ${price ?? 0} TK
-- Total Price: ${(price ?? 0) * orderQuantity} TK
-- Delivery Charge: Dhaka 80 TK, Outside Dhaka 120 TK`;
+- Price per unit: ${price ?? 0} $
+- Total Price: ${(price ?? 0) * orderQuantity} $`
 
     navigator.clipboard.writeText(message)
       .then(() => {
@@ -188,8 +187,7 @@ const ProductDetailsUpper = ({
         {/* Price Section */}
         <div style={{ padding: "16px", borderRadius: "12px", border: "1.5px solid #e5e5e5", boxShadow: "0 2px 8px rgba(0,0,0,0.04)", background: "#fff", display: "flex", flexDirection: "column", gap: "12px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-            <span style={{ fontSize: "28px", fontWeight: 800, color: "#000" }}>{price ?? product.productAttributes[0]?.discountedRetailPrice}</span>
-            <span style={{ fontSize: "14px", fontWeight: 500, color: "#666" }}>TK</span>
+            <span style={{ fontSize: "28px", fontWeight: 800, color: "#000" }}>${price ?? product.productAttributes[0]?.discountedRetailPrice}</span>
             {retailPrice && discountPrice && discountPrice > 0 && (
               <>
                 <span style={{ fontSize: "16px", fontWeight: 600, color: "#999", textDecoration: "line-through" }}>{retailPrice}</span>
@@ -203,7 +201,7 @@ const ProductDetailsUpper = ({
             ✓ In Stock
           </div>
           <p style={{ fontSize: "12px", fontWeight: 500, color: "#666", margin: "0" }}>
-            📦 Free delivery available | Dhaka 80 TK | Outside 120 TK
+           Buy over $50 & get FREE shipping across the USA
           </p>
         </div>
 

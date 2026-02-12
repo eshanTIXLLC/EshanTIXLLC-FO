@@ -176,7 +176,7 @@ const CartArea = () => {
                         {item.name} ({item.variant})
                       </Link>
                       <p style={{ fontSize: "16px", color: "#111827", margin: "5px 0" }}>
-                        Unit Price: {item.discountedRetailPrice} TK
+                        Unit Price: ${item.discountedRetailPrice} 
                       </p>
                       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                         <button
@@ -234,7 +234,7 @@ const CartArea = () => {
                         fontSize: "18px",
                       }}
                     >
-                      {item.orderQuantity * item.discountedRetailPrice} TK
+                      ${item.orderQuantity * item.discountedRetailPrice} 
                     </p>
                   </div>
                 </div>
@@ -245,7 +245,7 @@ const CartArea = () => {
 
             {/* Coupon Apply & Clear Cart */}
             <div style={{ marginTop: "40px", display: "flex", flexWrap: "wrap", gap: "15px" }}>
-              <input
+              {/* <input
                 type="text"
                 placeholder="Enter coupon code"
                 value={coupon}
@@ -260,8 +260,8 @@ const CartArea = () => {
                   fontWeight: "500",
                   color: "#1f2937",
                 }}
-              />
-              <button
+              /> */}
+              {/* <button
                 onClick={applyCoupon}
                 disabled={loading}
                 style={{
@@ -275,8 +275,8 @@ const CartArea = () => {
                 }}
               >
                 {loading ? "Applying..." : "Apply Coupon"}
-              </button>
-              <button
+              </button> */}
+              {/* <button
                 onClick={() => {
                   dispatch(clearCart());
                   localStorage.removeItem("coupon");
@@ -292,7 +292,7 @@ const CartArea = () => {
                 }}
               >
                 Clear Cart
-              </button>
+              </button> */}
             </div>
             {toastMessage && (
               <div
@@ -327,7 +327,7 @@ const CartArea = () => {
               </h3>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "10px" }}>
                 <span>Subtotal</span>
-                <span>{total} TK</span>
+                <span>${total}</span>
               </div>
               {couponData && (
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "10px" }}>
@@ -353,13 +353,13 @@ const CartArea = () => {
               >
                 <span>Grand Total</span>
                 <span>
-                  {total -
+                 $ {total -
                     (couponData?.orderPriceLimit
                       ? couponData?.orderPriceLimit <= total
                         ? couponData?.discountAmount ?? 0
                         : 0
                       : couponData?.discountAmount ?? 0)}{" "}
-                  TK
+                  
                 </span>
               </div>
               <Link

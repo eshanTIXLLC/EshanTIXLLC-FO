@@ -67,11 +67,11 @@ function TrendingProducts({
         <div className="row">
 <div className="col-12 text-center mb-50">
   <h2 className="animated-title">
-     Style & Trend Collection
+       Featured Products
 
   </h2>
   <p className="animated-subtitle">
-      Handpicked fashion essentials for the modern wardrobe – quality, comfort & style in every piece.
+        Carefully selected products you’ll love, all in one place.
 
   </p>
 </div>

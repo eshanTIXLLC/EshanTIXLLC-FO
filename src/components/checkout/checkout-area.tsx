@@ -68,15 +68,24 @@ const CheckoutArea = () => {
     }
   }, [dispatch]);
 
+  // useEffect(() => {
+  //   if (!city) {
+  //     setDeliveryFee(0);
+  //   } else if (city?.toLowerCase() === "dhaka") {
+  //     setDeliveryFee(80);
+  //   } else {
+  //     setDeliveryFee(120);
+  //   }
+  // }, [city]);
+
   useEffect(() => {
-    if (!city) {
-      setDeliveryFee(0);
-    } else if (city?.toLowerCase() === "dhaka") {
-      setDeliveryFee(80);
-    } else {
-      setDeliveryFee(120);
-    }
-  }, [city]);
+  if (total > 50) {
+    setDeliveryFee(0);
+  } else {
+    setDeliveryFee(10);
+  }
+}, [total]);
+
 
   const {
     register,

@@ -91,8 +91,8 @@ export default async function HomePage() {
   products={[]}
   featuredProducts={featuredProducts?.data}
 />
-          {/* Brands
-          // {brands?.data?.length > 0 && <Brands brands={brands?.data} />} */}
+        
+          {brands?.data?.length > 0 && <Brands brands={brands?.data} />}
 
            {/* <FeatureCards/>
 

@@ -98,7 +98,7 @@ const ShopCategory = ({ spacing = "100px 0", categories = [] }: ShopCategoryProp
                 lineHeight: 1.7,
               }}
             >
-              Fashion, electronics, lifestyle, daily essentials & more —  
+              Skin Care, Fashion, lifestyle, daily essentials & more —  
               everything you need, beautifully organized in one place.
             </p>
           </div>
