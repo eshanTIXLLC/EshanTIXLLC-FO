@@ -64,7 +64,7 @@ export default async function HomePageThree() {
         {/* offer slider products end */}
 
         {/* brand area start */}
-        <Brands df={true}/>
+     
         {/* brand area end */}
 
         {/* subscribe area start */}

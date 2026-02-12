@@ -51,7 +51,7 @@ export default async function HomePageTwo() {
         {/* blog area end */}
 
         {/* brand area start */}
-        <Brands df={true} />
+     
         {/* brand area end */}
 
         {/* subscribe area start */}
