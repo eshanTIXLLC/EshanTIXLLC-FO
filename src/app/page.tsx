@@ -42,7 +42,7 @@ export default async function HomePage() {
   });
 
   const brands = await fetchData({
-    url: `/customer/brands?skip=0&take=10`,
+    url: `/customer/brands?limit=500&page=1`,
     cache: "force-cache",
   });
 

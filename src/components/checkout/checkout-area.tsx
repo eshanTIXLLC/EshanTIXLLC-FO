@@ -79,7 +79,7 @@ const CheckoutArea = () => {
   // }, [city]);
 
   useEffect(() => {
-  if (total > 50) {
+  if (total > 100) {
     setDeliveryFee(0);
   } else {
     setDeliveryFee(10);

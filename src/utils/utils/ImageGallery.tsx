@@ -10,6 +10,7 @@ const images = [
   { src: "/3.png", alt: "Car" },
   { src: "/4.png", alt: "Delivery" },
   { src: "/5.png", alt: "Preparing" },
+  { src: "/6.jpg", alt: "Shipping" },
 ];
 
 const ImageGallery = () => {
