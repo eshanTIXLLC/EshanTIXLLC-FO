@@ -92,7 +92,7 @@ const Header = ({ white_bg }: IProps) => {
       <header
         style={{
           position: "fixed",
-          top: "40px", // announcement bar height
+          top: "36px", // announcement bar height
           left: 0,
           right: 0,
           width: "100%",
