@@ -17,7 +17,7 @@ const Brands = ({ brands = [] }: BrandsProps) => {
   const [loading, setLoading] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
 
-  const cardsToShow = 5; // একসাথে কতটা দেখাবে
+  const cardsToShow = 4; // একসাথে কতটা দেখাবে
   const totalBrands = brands.length;
 
   const handlePrev = () => {

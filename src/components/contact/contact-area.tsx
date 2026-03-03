@@ -26,7 +26,7 @@ const contactInfo = [
     id: 3,
     icon: "Mail",
     title: "Email",
-    subtitle: "info@eshantixllc.com",
+    subtitle: "info@eshantixllc.com & admin@eshantixllc.com",
   },
   {
     id: 4,

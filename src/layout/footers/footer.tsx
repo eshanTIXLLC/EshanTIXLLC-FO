@@ -97,6 +97,11 @@ export default function Footer() {
             <a href="mailto:info@eshantixllc.com" className="action-pill">
               <Mail size={18} /> <span>info@eshantixllc.com</span>
             </a>
+
+               <a href="mailto:admin@eshantixllc.com" className="action-pill">
+              <Mail size={18} /> <span>admin@eshantixllc.com</span>
+            </a>
+            
           </div>
         </div>
 
